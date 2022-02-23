@@ -1,0 +1,237 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+/*Header Styles*/
+header {
+  background-color: #cc0033;
+  padding: 10px;
+  display: flex;
+  box-shadow: 0px 40px #a00028;
+  margin-bottom: 40px;
+}
+/* Logo Component Tyles */
+.logoContainer {
+  width: 30%;
+}
+.logo {
+  background-color: #303030;
+  display: inline-block;
+  width: 30%;
+  height: 40px;
+  border-radius: 5px;
+}
+/*Search component Styles*/
+.searchForm {
+  width: 40%;
+}
+.search {
+  background: #a00028; 
+  border-radius: 5px;
+  height: 40px;
+  position: relative;
+}
+.search input {
+  background-color: #a00028;
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+.search::after {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+    width: 30px;
+    height: 30px;
+  background: url(icons/search_icon.svg) no-repeat;
+  content: " ";
+}
+/*Main section styles*/
+main {
+  background: #fafafa;
+  min-height: 480px;
+}
+/*Hero Banner image styles*/
+.hero-image {
+  background-image: url(images/B&W_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 320px;
+}
+/*Hero content and Character Image styles*/
+.hero-text, .characterImg {
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  width: 50%;
+}
+.characterImg {
+  right: 0;
+  text-align: right;
+}
+.characterImg img {
+  width: 60%;
+}
+/*Hero Heading styles*/
+.hero-text h1 {
+  margin: 10px 0;
+}
+/*Hero content styles*/
+.hero-text p{
+  margin: 5px 0;
+  font-size: 14px;
+}
+/*Hero Sub Heading styles*/
+.hero-text .subHeading {
+  font-size: 18px;
+}
+
+/*MAin content styles*/
+.main-content {
+  position: relative;
+}
+/*Three piller component styles*/
+.threePiller {
+  position: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  top: -50px
+}
+/*Three piller column component styles*/
+.threePiller .col {
+  padding: 10px;
+  width: 30%;
+  background: white;
+  margin: 10px;
+  border-radius: 3px;
+}
+/*Box Component styles*/
+.threePiller .col .box {
+  height: 120px;
+}
+.threePiller .col .box p{
+  text-align: center;
+  line-height: 120px;
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 24px;
+}
+.threePiller .col .box-aqua {
+  background-color: #35D3B4;
+}
+.threePiller .col .box-blue {
+  background-color: #1B2191;
+}
+.threePiller .col .box-purple {
+  background-color: #D822EE;
+}
+/*Footer Styles*/
+footer {
+  min-height: 200px;
+  background-color: #272727;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer div {
+  margin: 20px;
+  color: #FFFFFF;
+}
+footer div a {
+  display: block;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+/*Tablet view styles*/
+@media only screen and (max-width: 1024px) {
+  /*Logo Component Styles*/
+  .logo {
+    width: 90%;
+  }
+  /*Search Component Styles*/
+  .searchForm {
+    width: 50%;
+  }
+   /*Three piller component styles*/ 
+   .threePiller {
+    position: initial;
+    flex-flow: row wrap;
+  }
+  /*Three piller column component styles*/
+  .threePiller .col {
+    width: 40%;
+    padding: 8px;
+    margin: 8px;
+  }
+  /*Character image styles*/
+  .characterImg {
+    top: 85%;
+    z-index: 999;
+  }
+  /*Main content styles*/
+  .main-content {
+    padding-top: 38px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /*Logo Container Styles*/
+  .logoContainer {
+    width: 20%;
+  }
+  /*Search form styles*/
+  .searchForm {
+    width: 80%;
+  }
+  /*Hero content container styles*/
+  .hero-text {
+    width: calc(100% - 40px);
+    top: 0px;
+    transform: translateY(0);
+  }
+  /*Hero content styles*/
+  .hero-text h1 {
+    font-size: 24px;
+  }
+   .hero-text p {
+    font-size: 12px;
+  }
+  .hero-text .subHeading {
+    font-size: 16px;
+  }
+  /*Character image styles*/
+  .characterImg {
+    width: 90%;
+    text-align: center;
+  }
+  .characterImg img {
+    width: 90%;
+  }
+ /*Main content styles*/
+  .main-content {
+    padding-top: 44px;
+  }
+  /*Three piller component styles*/
+  .threePiller {
+    padding: 0px 20px 30px;
+  }
+  .threePiller .col .box {
+    height: 60px;
+    border-radius: 10px;
+  }
+  .threePiller .col .box p {
+    line-height: 60px;
+  }
+  .threePiller .col {
+    width: 100%;
+  }
+  /*Footer style*/
+  footer {
+    flex-flow: row wrap;
+  }
+}
